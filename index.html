@@ -6,50 +6,94 @@
   <style>
     body {
       font-family: Arial, sans-serif;
+      background-color: #fdf6ee; /* cream */
       max-width: 800px;
       margin: auto;
-      padding: 20px;
+      padding: 40px 20px;
       line-height: 1.6;
+      color: #2c2c2c;
     }
+
     h1 {
-      color: #222;
+      text-align: center;
+      color: #2e1a47; /* dark purple */
+      margin-bottom: 20px;
     }
-    a {
-      color: #2a7ae2;
+
+    p {
+      margin-bottom: 16px;
+    }
+
+    .container {
+      background: white;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    }
+
+    .buttons {
+      margin-top: 30px;
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+    }
+
+    .btn {
+      padding: 12px 20px;
+      border-radius: 12px;
       text-decoration: none;
+      color: white;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .privacy {
+      background: #5b3cc4; /* purple */
+    }
+
+    .terms {
+      background: #1e3a8a; /* dark blue */
+    }
+
+    .btn:hover {
+      opacity: 0.85;
     }
   </style>
 </head>
 <body>
 
-  <h1>Arc</h1>
+  <div class="container">
 
-  <p><strong>Welcome to Arc.</strong></p>
+    <h1>Arc</h1>
 
-  <p>
-    Arc is an intelligent personal assistant designed to help users plan and optimize their daily tasks with maximum efficiency.
-  </p>
+    <p><strong>Welcome to Arc.</strong></p>
 
-  <p>
-    Users can input their tasks, preferred locations, time windows, and priorities. Arc then generates an optimized schedule by calculating the shortest routes, minimizing travel time, and organizing tasks in the most efficient order. It also suggests parallel tasking when possible and alerts users if their schedule is unrealistic, helping them adjust and stay on track.
-  </p>
+    <p>
+      Arc is an intelligent personal assistant designed to help users plan and optimize their daily tasks with maximum efficiency.
+    </p>
 
-  <p>
-    Beyond scheduling, Arc provides smart recommendations by suggesting everything you need for each task — from essential documents to small but important items — ensuring you are fully prepared.
-  </p>
+    <p>
+      Users can input their tasks, preferred locations, time windows, and priorities. Arc then generates an optimized schedule by calculating the shortest routes, minimizing travel time, and organizing tasks in the most efficient order. It also suggests parallel tasking when possible and alerts users if their schedule is unrealistic.
+    </p>
 
-  <p>
-    Arc also integrates with your email, automatically detecting tasks and appointments from your inbox. It can notify you, suggest adding them to your schedule, and even assist in replying to emails using AI.
-  </p>
+    <p>
+      Arc also provides smart recommendations by suggesting everything you need for each task — from essential documents to small but important items — ensuring you are fully prepared.
+    </p>
 
-  <p>
-    By combining task optimization, location intelligence, and email synchronization, Arc acts as a powerful all-in-one productivity assistant that saves time, reduces stress, and keeps your day organized.
-  </p>
+    <p>
+      It integrates with your email, detects tasks and appointments, and can assist in replying using AI.
+    </p>
 
-  <ul>
-    <li><a href="privacy.html">Privacy Policy</a></li>
-    <li><a href="terms.html">Terms of Service</a></li>
-  </ul>
+    <p>
+      Arc helps you stay organized, save time, and reduce stress.
+    </p>
+
+    <div class="buttons">
+      <a href="privacy.html" class="btn privacy">Privacy Policy</a>
+      <a href="terms.html" class="btn terms">Terms of Service</a>
+    </div>
+
+  </div>
 
 </body>
 </html>
